@@ -48,8 +48,32 @@ class Solution(object):
         return total
 solution = Solution()
 answer = solution.romanToInt("MCMXCIV")
-print(answer)
+# print(answer)
 
 # s = "MCMXCIV"
 # print(list(s))
 # print(s)
+
+
+# PROBLEM 190 
+class Solution(object):
+    def reverseBits(self, n):
+        bnry= bin(n)[2:].zfill(32) # 0b10100101000001111010011100 binary 
+        print(bnry)  ## 00000010100101000001111010011100
+        bnry=str(bnry[::-1]) ## str and reversed 
+        print(bnry)  #00111001011110000010100101000000
+        result=int(bnry, 2)
+        print(result)  ## 964176192
+        return result
+    # pass
+
+
+solution= Solution()
+answer = solution.reverseBits(43261596)
+print(answer)  ## 964176192
+# a= str(10100101000001111010011100)
+# print(a[::-1])
+n = 43261596
+# a=bin(n)
+# print(str(a)[::])
+
