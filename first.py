@@ -55,6 +55,18 @@ answer = solution.romanToInt("MCMXCIV")
 # print(s)
 
 
+
+# 58. Length of Last Word
+class Solution(object):
+    def lengthOfLastWord(self, s):
+        return len(s.strip().split().pop())
+ans= Solution()
+result = ans.lengthOfLastWord("luffy is still joyboy")
+print(result)
+
+# s = "luffy is still joyboy"
+# print(len(s.strip().split().pop()))
+
 # PROBLEM 190 
 class Solution(object):
     def reverseBits(self, n):
@@ -70,10 +82,9 @@ class Solution(object):
 
 solution= Solution()
 answer = solution.reverseBits(43261596)
-print(answer)  ## 964176192
+# print(answer)  ## 964176192
 # a= str(10100101000001111010011100)
 # print(a[::-1])
 n = 43261596
 # a=bin(n)
 # print(str(a)[::])
-
